@@ -1,0 +1,82 @@
+body{
+    background: linear-gradient(120deg, #ffcce6 , #ffe6f2 , #fff);
+    margin:0;
+
+}
+
+.text-div p:first-child {
+    color: #bf4080;
+    font-size: 50px;
+    text-transform: uppercase ;
+    letter-spacing: 20px;
+}
+
+.text-div p:nth-child(2) , .text-div p:nth-child(3) {
+    font-size: 50px;
+    text-transform: uppercase ;
+    letter-spacing: 20px;
+}
+
+.text-div p:nth-child(4){
+    color:#bf4080;
+}
+
+.text-elements {
+    margin: 0 0 10px 0 ;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.big-image {
+    height: 100vh ;
+    float: right;
+}
+
+.right-section {
+    padding: 60px 140px ;
+}
+
+.logo {
+    margin-bottom: 110px;
+}
+
+#discription {
+    margin: 50px 0;
+    /* line-height: ; */
+}
+
+form input , form button {
+    border:0 ;
+    height: 42px ;
+    border-radius: 35px;
+    outline: none;
+    
+}
+
+form input {
+    width:80% ;
+    border: 1px solid #666 ;
+    padding-left: 20px;
+    
+}
+
+form button {
+    background: linear-gradient(to left, #ff4d88, #ffccdd);
+    width: 85px ;
+    height: 45px;
+    margin-left: 0;
+    box-shadow: 5px 10px 30px #999;
+}
+
+form button:hover {
+    background:#ffb3da ;
+}
+
+#error-image {
+    margin-left: -100px;
+    visibility: hidden;
+}
+
