@@ -10,21 +10,21 @@ function check (){
     if ( !entered.value.match(emailFormat) || entered.value == "" ){
         entered.style.border= "1px solid #ff0000";
         errorImg.style.visibility = "visible";
-        errorPlace.innerHTML= "Please provide a valid email";
-        errorPlace.style.color = "#ff0000"; 
-
+        errorPlace.innerHTML= "Please provide a valid email"; 
     }else {
         entered.style.border= "none";
         errorImg.style.visibility = "hidden";
         errorPlace.innerHTML= "";
-
     };    
 };
 
 
 btn.addEventListener('click', function (event) {
+    event.preventDefault();
     check();  
 } );
+
+
 
 
 

@@ -1,7 +1,25 @@
 body{
     background: linear-gradient(120deg, #ffcce6 , #ffe6f2 , #fff);
     margin:0;
+    font-family: 'Recursive', sans-serif;
+}
 
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;  
+}
+
+.right-section {
+    text-align: right;
+    margin-left: 120px ;  
+}
+
+.left-section {
+    padding: 60px 0 0 120px ;
+}
+
+.logo {
+    margin-bottom: 110px;
 }
 
 .text-div p:first-child {
@@ -25,42 +43,25 @@ body{
     margin: 0 0 10px 0 ;
 }
 
-.container {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.big-image {
-    height: 100vh ;
-    float: right;
-}
-
-.right-section {
-    padding: 60px 140px ;
-}
-
-.logo {
-    margin-bottom: 110px;
-}
-
 #discription {
     margin: 50px 0;
-    /* line-height: ; */
+}
+
+#banner-old { 
+    height: 100vh;   
 }
 
 form input , form button {
     border:0 ;
     height: 42px ;
     border-radius: 35px;
-    outline: none;
-    
+    outline: none;  
 }
 
 form input {
     width:80% ;
     border: 1px solid #666 ;
-    padding-left: 20px;
-    
+    padding-left: 20px;  
 }
 
 form button {
@@ -78,5 +79,74 @@ form button:hover {
 #error-image {
     margin-left: -100px;
     visibility: hidden;
+}
+
+#banner-new {
+    display: none;
+}
+
+#error-place {
+    margin: 3px auto;
+    text-align: center;
+    color: #ff0000;
+}
+
+/*----------------------------------------------------------------------------*/
+
+@media (max-width: 1170px) {
+    .left-section {
+        padding: 60px 0 0 60px ;
+    }
+
+    .right-section {
+        margin-left: 40px ;  
+    }
+
+    #banner-new {
+        display: none;
+    }
+}
+
+@media (max-width: 1030px) {
+    #banner-new {
+        content: url('../images/kids-mobile.png');
+        width: 100% ;
+        height: auto;
+    }
+
+    .container {
+        display: block ;
+    }
+
+    #banner-new {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    #banner-old {
+        display: none ;
+    }
+
+    .left-section {
+        padding: 30px 0 70px 0  ;
+    }
+    
+    .logo {
+        margin-bottom: 30px;
+        padding-left: 10% ;
+    }
+
+    .marg{
+        text-align: center; 
+    }
+
+    #discription {
+        padding: 0 20% ;
+    }
+
+    form {
+        width: 85%;
+        margin: 0 auto ;
+    }
 }
 
